@@ -1,0 +1,17 @@
+// Altura min del Header
+.header-min-height{
+    min-height: 63px;
+}
+
+// Logo Header
+#header-logo{
+    height: 33px;
+}
+
+/*   En el breakpoint sm(576px) de BS, el logo del header va centrado.
+   31px de padding izquierdo al logo para compensar el menu de hamburguesa. */
+   @media (max-width:576px){
+    .center-spacer{
+        width: 45px;
+    }
+}

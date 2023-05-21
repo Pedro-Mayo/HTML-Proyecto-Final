@@ -1,0 +1,224 @@
+/* Para usar las fuentes Roboto y Roboto Condensed
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap");
+.header-min-height {
+  min-height: 63px; }
+
+#header-logo {
+  height: 33px; }
+
+/*   En el breakpoint sm(576px) de BS, el logo del header va centrado.
+   31px de padding izquierdo al logo para compensar el menu de hamburguesa. */
+@media (max-width: 576px) {
+  .center-spacer {
+    width: 45px; } }
+
+.socialicon a img {
+  width: 20px; }
+
+.seccionhistoria {
+  padding: 20px; }
+
+figure {
+  margin: 0px 20px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  display: inline-block;
+  background-color: black;
+  color: white; }
+
+/* Formato texto e imagenes pagina historia */
+.seccionhistoria p {
+  max-width: 600px;
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top; }
+
+.seccionhistoria figure img {
+  max-width: 350px; }
+
+/* Contenedor del cartel de lanzamiento */
+.lanzamiento-contenedor {
+  min-height: calc(100vh - 63px);
+  background-image: url(../resources/img/odscover.jpg);
+  background-size: cover;
+  background-position-x: center; }
+
+.lanzamiento-cartel {
+  max-width: 80vw; }
+
+.disc-covers {
+  width: 250px; }
+
+.show-tc {
+  text-align: center; }
+
+#barra-formulario {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  padding: 5px 5%; }
+  #barra-formulario p {
+    margin: 0%;
+    color: white; }
+
+#cargafan {
+  width: 300px;
+  padding: 20px;
+  background-color: black;
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+  border-radius: 20px;
+  color: white;
+  display: block; }
+
+.formulariofan {
+  width: 126px;
+  margin: 5px; }
+
+#comentariofan {
+  width: 270px;
+  height: 100px;
+  margin: 0px 5px 10px 5px; }
+
+.fan-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+.foto-fan {
+  min-width: 230px;
+  max-width: 330px; }
+  .foto-fan img {
+    width: 100%; }
+
+html h1, html h2, html h3, html h4, html h5, html h6 {
+  /* Fuente de los titulos.*/
+  font-family: 'Roboto Condensed', sans-serif; }
+
+html body {
+  padding-top: 63px;
+  /* El header es fijo, hay que compensarlo (segun doc de bootstrap)*/
+  background-color: black; }
+  html body * {
+    font-family: 'Roboto', sans-serif;
+    /* Fuente de textos normales. Selectores extras para agregar especificidad */ }
+
+.full-h {
+  min-height: calc(100vh - 63px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .full-h main {
+    flex-grow: 1; }
+
+.grid-navegacion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; }
+
+.disco {
+  grid-area: disco;
+  min-height: 150px;
+  border: 2px solid white;
+  flex-grow: 1;
+  background-image: url("../resources/img/main/disco.jpg");
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  display: flex;
+  align-items: stretch; }
+  .disco a {
+    text-decoration: none;
+    display: flex;
+    flex-grow: 1;
+    align-items: stretch; }
+    .disco a div {
+      flex-grow: 1; }
+
+.historia {
+  grid-area: historia;
+  min-height: 150px;
+  border: 2px solid white;
+  flex-grow: 1;
+  background-image: url("../resources/img/main/hist.jpg");
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  display: flex;
+  align-items: stretch; }
+  .historia a {
+    text-decoration: none;
+    display: flex;
+    flex-grow: 1;
+    align-items: stretch; }
+    .historia a div {
+      flex-grow: 1; }
+
+.shows {
+  grid-area: shows;
+  min-height: 150px;
+  border: 2px solid white;
+  flex-grow: 1;
+  background-image: url("../resources/img/main/shows.jpg");
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  display: flex;
+  align-items: stretch; }
+  .shows a {
+    text-decoration: none;
+    display: flex;
+    flex-grow: 1;
+    align-items: stretch; }
+    .shows a div {
+      flex-grow: 1; }
+
+.fans {
+  grid-area: fans;
+  min-height: 150px;
+  border: 2px solid white;
+  flex-grow: 1;
+  background-image: url("../resources/img/main/fans.jpg");
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  display: flex;
+  align-items: stretch; }
+  .fans a {
+    text-decoration: none;
+    display: flex;
+    flex-grow: 1;
+    align-items: stretch; }
+    .fans a div {
+      flex-grow: 1; }
+
+.hover-grey {
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 180ms ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hover-grey:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
+  .hover-grey h2 {
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.538);
+    border-radius: 6px;
+    color: black; }
+
+@media (min-width: 576px) {
+  .grid-navegacion {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-content: stretch;
+    grid-template-areas: "disco disco historia historia historia " "disco disco shows shows shows" "disco disco fans fans fans"; } }

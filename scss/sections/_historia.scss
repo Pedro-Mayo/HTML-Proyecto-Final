@@ -1,0 +1,30 @@
+// Formato de las secciones con imagenes y texto en Historia
+
+.seccionhistoria{
+    padding: 20px;
+}
+
+
+// Formato de las imagenes con pie
+figure{
+    margin: 0px 20px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+
+/* Formato texto e imagenes pagina historia */
+.seccionhistoria p{
+    max-width: 600px;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
+.seccionhistoria figure img{
+    max-width: 350px;
+}
+

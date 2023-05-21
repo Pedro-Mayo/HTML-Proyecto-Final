@@ -1,0 +1,16 @@
+/* Contenedor del cartel de lanzamiento */
+.lanzamiento-contenedor{
+    min-height: calc(100vh - 63px);
+    background-image:url(../resources/img/odscover.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.lanzamiento-cartel{
+    max-width: 80vw;
+}
+
+
+.disc-covers{
+    width: 250px;
+}

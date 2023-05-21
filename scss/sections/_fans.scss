@@ -1,0 +1,54 @@
+#barra-formulario{
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding: 5px 5%;
+    p{
+        margin:0%;
+        color: white;
+    }
+}
+
+// Formato del formulario
+#cargafan{
+    width: 300px;
+    padding: 20px;
+    background-color: black;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 20px;
+    color: white;
+    display: block;
+}
+.formulariofan{
+    width: 126px;
+    margin: 5px;
+
+}
+#comentariofan{
+    width: 270px;
+    height: 100px;
+    margin: 0px 5px 10px 5px;
+}
+
+// Fotos Fans
+
+.fan-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+
+.foto-fan{
+    min-width: 230px;
+    max-width: 330px;
+
+    img{
+        width: 100%;
+    }
+
+}

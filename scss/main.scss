@@ -1,0 +1,124 @@
+/* Para usar las fuentes Roboto y Roboto Condensed
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+$main-grid:
+disco "../resources/img/main/disco.jpg",
+historia "../resources/img/main/hist.jpg",
+shows "../resources/img/main/shows.jpg",
+fans "../resources/img/main/fans.jpg"; 
+
+// Importar las fuentes Roboto y Roboto Condensed normal y bold
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+@import 'sections/header';
+@import 'sections/footer';
+@import 'sections/historia';
+@import 'sections/discografia';
+@import 'sections/shows';
+@import 'sections/fans';
+
+
+
+//                                             CSS General
+
+
+
+//html para agregar especificidad y ganarle a bootstrap
+html {
+
+    h1, h2, h3, h4,  h5, h6 {
+        /* Fuente de los titulos.*/
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    body {
+        padding-top: 63px;  /* El header es fijo, hay que compensarlo (segun doc de bootstrap)*/
+        background-color: black;
+             
+        * {
+            font-family: 'Roboto', sans-serif;          /* Fuente de textos normales. Selectores extras para agregar especificidad */
+                }
+}
+}
+
+.full-h{
+    min-height: calc(100vh - 63px);                  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    main{
+    flex-grow: 1;
+}}
+
+//                                          INDEX
+
+.grid-navegacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+  }
+
+
+
+@each $page, $img in $main-grid {
+    .#{$page} {
+        grid-area: $page;
+        min-height: 150px;
+        border: 2px solid white;
+        flex-grow: 1;
+        background-image: url($img);
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: center;
+        display: flex;
+        align-items: stretch;
+
+        a{
+            text-decoration: none;
+            display: flex;
+            flex-grow: 1;
+            align-items: stretch;
+            div{
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+.hover-grey{
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 180ms ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    h2{
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.538);
+        border-radius: 6px;
+        color: black;
+    }
+}
+
+
+
+@media (min-width:576px){
+
+    .grid-navegacion {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:auto;
+        align-content: stretch;
+        grid-template-areas: 
+          "disco disco historia historia historia "
+          "disco disco shows shows shows"
+          "disco disco fans fans fans";
+      }
+
+}
