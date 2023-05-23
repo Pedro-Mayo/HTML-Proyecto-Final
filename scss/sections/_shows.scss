@@ -1,4 +1,14 @@
-.show-tc{
-    text-align: center;
+#shows-main{
+    display: flex;
+    flex-direction: column;
     
+}
+
+.shows-cartel{
+    max-height: 80vh;
+    width: 85vw;
+
+    img{
+width: 85%;
+    }
 }

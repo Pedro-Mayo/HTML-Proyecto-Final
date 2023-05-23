@@ -54,8 +54,15 @@ figure {
 .disc-covers {
   width: 250px; }
 
-.show-tc {
-  text-align: center; }
+#shows-main {
+  display: flex;
+  flex-direction: column; }
+
+.shows-cartel {
+  max-height: 80vh;
+  width: 85vw; }
+  .shows-cartel img {
+    width: 85%; }
 
 #barra-formulario {
   display: flex;
