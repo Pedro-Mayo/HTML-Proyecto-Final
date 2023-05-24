@@ -54,15 +54,12 @@ figure {
 .disc-covers {
   width: 250px; }
 
-#shows-main {
-  display: flex;
-  flex-direction: column; }
-
-.shows-cartel {
-  max-height: 80vh;
+.show-cartel {
   width: 85vw; }
-  .shows-cartel img {
-    width: 85%; }
+  .show-cartel > div {
+    border-radius: 20px;
+    border: 2px solid #7f7f7f;
+    background-color: #121212; }
 
 #barra-formulario {
   display: flex;

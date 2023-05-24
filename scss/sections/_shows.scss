@@ -1,14 +1,9 @@
-#shows-main{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.shows-cartel{
-    max-height: 80vh;
+.show-cartel {
     width: 85vw;
 
-    img{
-width: 85%;
+    &>div{
+        border-radius: 20px;
+        border: 2px solid rgb(127, 127, 127);
+        background-color: rgba($color: #121212, $alpha: 1.0);
     }
 }
